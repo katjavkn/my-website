@@ -1,0 +1,264 @@
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/pexels-tyler-lastovich-937782.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    color: #000000;
+    padding: 0px 20px;
+    border: 1px solid rgb(141, 141, 185);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    text-shadow: rgba(0, 0, 0, 0.7);
+}
+ul{
+    list-style: none;
+    float: right;
+    display: flex;
+    margin-top: 20px;
+
+}
+ul li a{
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.10s ease;
+}
+
+ul li a:hover{
+    background: #ffffff;
+    color: #000000;
+}
+
+ul li.active a{
+    background: #ffffff;
+    color: #000000;
+}
+
+.principale{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+.titre{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+   
+}
+
+.section-title1{
+    font-size: 45px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-weight: 60;
+    position: relative;
+    text-align: center;
+    margin-bottom: 7%;
+}
+.section-title1::before{
+    content: "";
+    position: absolute;
+    background-color: pink;
+    width: 315px;
+    height: 7px;
+    bottom: 0;
+}
+
+.moi{
+margin: 100px;
+}
+
+.photos{
+    background-color: pink;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.myself{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-width: 350px;
+    height: 500px;
+    flex: 1;
+}
+
+.myself1{
+    background-image: url(images/moi\ miroir.JPG);
+}
+
+.myself2{
+    background-image: url(images/moi\ bellebis.JPG);
+}
+
+.myself3{
+    background-image: url(images/moi\ rouen\ rouge.jpg);
+}
+
+.details{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(193, 174, 177);
+    padding: 5px 20px;
+    text-align: center;
+}
+
+.details1{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(181, 141, 147);
+    padding: 5px 20px;
+    text-align: center;
+}
+
+.details2{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(193, 174, 177);
+    padding: 5px 20px;
+    text-align: center;
+}
+
+.photo-name{
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+
+.photo-description{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.entourage{
+    margin: 100px;
+}
+
+.photos{
+    background-color: rgb(137, 21, 40);
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.friends{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-width: 350px;
+    height: 500px;
+    flex: 1;
+}
+.candice{
+    background-image: url(images/candice\ \(2\).jpg);
+}
+
+.pauline{
+    background-image: url(images/pauline.JPG);
+}
+
+.solene{
+    background-image: url(images/solene\ IIM.JPG);
+}
+.nehemie{
+    background-image: url(images/nehemie2.JPG);
+}
+.laura{
+    background-image: url(images/ma\ soeur.jpg);
+}
+.lili{
+    background-image: url(images/mon\ chat.PNG);
+}
+
+.details3{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(193, 174, 177);
+    padding: 5px 20px;
+    text-align: center;
+}
+
+.details4{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: pink;
+    padding: 5px 20px;
+    text-align: center;
+}
+
+.details5{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(193, 174, 177);
+    padding: 5px 20px;
+    text-align: center;
+}
+.section-title2{
+    font-size: 45px;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif; 
+    font-weight: 60;
+    position: relative;
+    text-align: center;
+    margin-bottom: 7%;
+}
+.section-title2::before{
+    content: "";
+    position: absolute;
+    background-color: pink;
+    width: 175px;
+    height: 7px;
+    bottom: 0;
+}
+
+@media screen and (max-width: 1200px){
+    main{
+        width: 950px;
+    }
+}
+@media screen and (max-width: 950px){
+    main{
+        width: 700px;
+    }
+    .principale{
+        flex-direction: column;
+    }
+    .photos{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 720px){
+    main{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    main{
+        width: 300px;
+    }
+}
