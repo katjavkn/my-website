@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libraires</title>
+
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="slider.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.7.0/simple-lightbox.min.js"></script>
+
+    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/vanilla.filterizr.min.js"></script>
+    <script src="slider.js"></script>
+</head>
+<body>
+
+    <div class="swiper mon-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide-dw">
+                <p class="subtitle">Axe métier</p>
+                <p class="title">Axe développement web</p>
+            </div>
+
+            <div class="swiper-slide slide-cd">
+                <p class="subtitle">Axe métier</p>
+                <p class="title">Axe création & design</p>
+            </div>
+
+            <div class="swiper-slide slide-cdeb">
+                <p class="subtitle">Axe métier</p>
+                <p class="title">Axe com' digitale</p>
+            </div>
+
+            <div class="swiper-slide slide-jv">
+                <p class="subtitle">Axe métier</p>
+                <p class="title">Jeux vidéo</p>
+            </div>
+
+            <div class="swiper-slide slide-3D">
+                <p class="subtitle">Axe métier</p>
+                <p class="title">Animation 3D</p>
+            </div>
+
+        </div>
+       
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+       
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.css">
+
+    <main class="portfolio">
+
+        <div class="filters">
+            <ul>
+                <li data-filter="all" class="active"> Tous les projets</li>
+                <li data-filter="cd"> Création & Design</li>
+                <li data-filter="cdeb"> Com' Digitale</li>
+                <li data-filter="dw"> Développement web</li>
+                <li data-filter="3D"> Animation 3D</li>
+                <li data-filter="jv"> Jeux vidéo</li>
+            </ul>
+        </div>
+
+        <div class="portfolio-elements">
+
+            <div class="card filtr-item" data-category="cd">
+                <div class="card-header">
+                    <p class="card-title">Motion Design</p>
+                    <div class="card-axe">Création & Design</div>
+                </div>
+                <a href="images/cd.webp">
+                    <img src="images/cd.webp" alt="Motion">
+                </a>
+            </div>
+
+            <div class="card filtr-item" data-category="3D">
+                <div class="card-header">
+                    <p class="card-title">Showreel</p>
+                    <div class="card-axe">Animation 3D</div>
+                </div>
+                <a href="images/showreel.webp">
+                    <img src="images/showreel.webp" alt="Showreel">
+                </a>
+            </div>
+
+            <div class="card filtr-item" data-category="jv">
+                <div class="card-header">
+                    <p class="card-title">Game art</p>
+                    <div class="card-axe">Jeux vidéo</div>
+                </div>
+                <a href="images/jv.png">
+                    <img src="images/jv.png" alt="game art">
+                </a>
+            </div>
+
+            <div class="card filtr-item" data-category="coding">
+                <div class="card-header">
+                    <p class="card-title">Programation</p>
+                    <div class="card-axe">Développement web</div>
+                </div>
+                <a href="images/coding.jpeg">
+                    <img src="images/coding.jpeg" alt="coding">
+                </a>
+            </div>
+
+            <div class="card filtr-item" data-category="cdeb">
+                <div class="card-header">
+                    <p class="card-title">Communication</p>
+                    <div class="card-axe">Comm' digitale</div>
+                </div>
+                <a href="images/cdeb.jpeg">
+                    <img src="images/cdeb.jpeg" alt="cdeb">
+                </a>
+            </div>
+
+        </div>
+
+
+        <ul class="tabs">
+            <li class="tab tab-active" onclick="changeTab(this, 'axe1')">Axe Création & Design</li>
+            <li class="tab" onclick="changeTab(this, 'axe2')">Axe Comm' digitale</li>
+            <li class="tab" onclick="changeTab(this, 'axe3')">Axe Développement web</li>
+            <li class="tab" onclick="changeTab(this, 'axe4')">Axe Animation 3D</li>
+            <li class="tab" onclick="changeTab(this, 'axe5')">Axe Jeux vidéo</li>
+        </ul>
+    
+        <div class="content axe1 active">
+            <h2>Contenu de l'Axe CD</h2><br>
+            <p>Bachelor Création & Design<br>
+                Mastère Direction artistique<br>
+                Mastère Interactivité et UX design<br>
+                Mastère Product Design UX-UI<br>
+                <br>
+                Une alternance est possible à partir de la 3ème année
+            </p>
+        </div>
+    
+        <div class="content axe2">
+            <h2>Contenu de l'Axe CDEB</h2><br>
+            <p>Bachelor Communication Digitale<br>
+                Mastère Marketing et Communication Digitale<br>
+                Mastère Communication et stratégie social media<br>
+                Mastère Stratégie e-business<br>
+                Mastère Digital Marketing & Data Analytics<br>
+                <br>
+                Une alternance est possible à partir de la 3ème année
+            </p>
+        </div>
+    
+        <div class="content axe3">
+            <h2>Contenu de l'Axe CODING</h2><br>
+            <p>Bachelor Coding & Digital Innovation<br>
+                Mastère Ingénierie web et mobile<br>
+                Mastère Management de la transformation digitale<br>
+                <br>
+                Une alternance est possible à partir de la 3ème année
+            </p>
+        </div>
+    
+        <div class="content axe4">
+            <h2>Contenu de l'Axe ANIMATION 3D</h2><br>
+            <p>Bachelor Animation 3D
+                Mastère Réalisation et animation 3D<br>
+                Mastère Gestion de production 3D<br>
+                <br>
+                Une alternance est possible à partir de la 4ème année
+            </p>
+        </div>
+    
+        <div class="content axe5">
+            <h2>Contenu de l'Axe JEUX VIDEO</h2><br>
+            <p>Bachelor Jeux Vidéo
+                Mastère Production et marketing du jeu vidéo<br>
+                Mastère Game design<br>
+                Mastère Game Programming<br>
+                Mastère Game Art<br>
+                <br>
+                Une alternance est possible à partir de la 4ème année
+            </p>
+        </div>
+    
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="principale">
+        <div class="logo">
+            <a href="logo">KV</a>
+        </div>
+        <ul>
+            <li class="active">
+                <a href="index.html">Accueil</a>
+            </li>
+            <li>
+                <a href="page2.html">À propos de moi</a>
+            </li>
+            <li>
+                <a href="page3.html">Mon entourage</a>
+            </li>
+            <li>
+                <a href="formulaire.html">Formulaire</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="message-error">
+        <ul></ul>
+    </div>
+    <div class="message-success">
+        <ul></ul>
+    </div>
+
+    <form action="" method="POST" enctype="multipart/form-data">
+        <div>
+            <label for="prénom">Prénom</label>
+            <input type="text" id="prénom" name="Votre prénom" placeholder="Votre prénom">
+        </div>
+
+        <div>
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="Votre nom" placeholder="Votre nom">
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="Votre email" placeholder="Votre email">
+        </div>
+
+        <div>
+            <label for="date de naissance">Date de naissance</label>
+            <input type="date" id="date" name="Votre date de naissance" placeholder="Votre date de naissance">
+        </div>
+
+        <div>
+            <label for="numéro">Numéro de téléphone</label>
+            <input type="text" id="numéro" name="Votre numéro de téléphone" placeholder="Votre numéro de téléphone">
+        </div>
+
+        <div>
+            <label for="études">Niveau d'études</label>
+            Seconde <input type="radio" name="études">
+            1ère: <input type="radio" name="études" /><br />
+            Terminale: <input type="radio" name="études" />
+        </div>
+        
+        <div>
+            <button type="submit">Envoyer</button>
+        </div>
+
+        <div class="container">
+            <h1>Mode Sombre</h1>
+            <label for="darkModeToggle">Mode Sombre</label>
+            <input type="checkbox" id="darkModeToggle">
+        </div>
+        
+    </form>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
